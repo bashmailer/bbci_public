@@ -478,7 +478,11 @@ switch(lower(opt.YUnitDispPolicy)),
 end
 
 if opt.Legend && opt.Butterfly==0
-  H.leg= legend(H.plot, epo.className, opt.LegendPos);
+  if opt.LegendPos==0
+    H.leg= legend(H.plot, epo.className');
+  else
+    H.leg= legend(H.plot, epo.className', opt.LegendPos);
+  end
 else
   H.leg= NaN;
 end
