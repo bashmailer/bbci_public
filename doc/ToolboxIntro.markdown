@@ -118,7 +118,7 @@ it(1:10)
 ```
 
 ## Segmentation and plotting of ERPs   <a id="Epo"></a>
-Having the basic ingredients together, we can start a simple ERP analsis
+Having the basic ingredients together, we can start a simple ERP analysis
 
 ```matlab
 % segmentation of continuous data in 'epochs' based on markers
